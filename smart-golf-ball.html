@@ -23,6 +23,9 @@
     .smartball-hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;background:#070c17}
     .smartball-hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
     .smartball-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,12,23,.68),rgba(7,12,23,.20) 55%,rgba(7,12,23,.05))}
+    .smartball-page>.design-section:not(.smartball-english-section){display:none}
+    .smartball-english-section{width:100%;max-width:none;margin:0;padding:0;background:#070c17}
+    .smartball-english-section img{display:block;width:100%;height:auto;margin:0}
     .smartball-hero-copy{position:relative;z-index:1;width:min(calc(100% - 64px),var(--max));margin:0 auto 72px;text-align:left}
     .smartball-hero-copy h1{max-width:850px;margin:0;color:#fff;font-size:clamp(52px,7vw,100px);font-weight:700;line-height:.98;letter-spacing:-.065em;animation:heroTitleUp .9s cubic-bezier(.2,.8,.2,1) .2s both}
     @keyframes heroTitleUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
@@ -74,6 +77,24 @@
       <video autoplay muted loop playsinline preload="auto" poster="./assets/videos/smartball-cover-poster.jpg" aria-label="Smart Golf Ball cover video">
         <source src="./assets/videos/smartball-cover.mp4" type="video/mp4">
       </video>
+    </section>
+    <section class="design-section smartball-english-section" aria-label="Smart Golf Ball construction and technology">
+      <img src="./assets/smartball-english-01.jpg?v=20260829-1" alt="Smart Golf Ball construction, layers, elastomer, protective shell, and outer cover">
+    </section>
+    <section class="design-section smartball-english-section" aria-label="GINOVO putting and charging system">
+      <img src="./assets/smartball-english-02.jpg?v=20260829-1" alt="GINOVO Putting System and Smart Wireless Charging System">
+    </section>
+    <section class="design-section smartball-english-section" aria-label="Distance-based putting practice">
+      <img src="./assets/smartball-english-03.jpg?v=20260829-1" alt="Repeated, quantitative putting practice by target distance and green speed">
+    </section>
+    <section class="design-section smartball-english-section" aria-label="Slope-based putting practice">
+      <img src="./assets/smartball-english-04.jpg?v=20260829-1" alt="Flexible putting practice for different green slopes">
+    </section>
+    <section class="design-section smartball-english-section" aria-label="Practice on real greens">
+      <img src="./assets/smartball-english-05.jpg?v=20260829-1" alt="Putting practice with distance and slope effects on real greens">
+    </section>
+    <section class="design-section smartball-english-section" aria-label="Online and offline match modes">
+      <img src="./assets/smartball-english-06.jpg?v=20260829-1" alt="Practical putting practice through online and offline match modes">
     </section>
     <section class="design-section anatomy-section" data-editable-section="smartball-anatomy"><div class="anatomy-stage"><img src="./assets/smartball-page-01-bg.png" alt="Smart Golf Ball Internal Structure"><h2 class="anatomy-title" data-smartball-content="anatomyTitle">Smart Golf Ball that embodies the feel and performance of a regular golf ball</h2><div class="anatomy-copy anatomy-layer"><h3 data-smartball-content="anatomyLayerTitle">Layer</h3><p data-smartball-content="anatomyLayerDescription">Ionomer shock absorption structure ensures durability</p></div><div class="anatomy-copy anatomy-elastomer"><h3 data-smartball-content="anatomyElastomerTitle">Elastomer</h3><p data-smartball-content="anatomyElastomerDescription">Securing repulsion force and core eccentricity.\nApplying perfect control technology.</p></div><div class="anatomy-copy anatomy-shell"><h3 data-smartball-content="anatomyShellTitle">Protective Shell</h3><p data-smartball-content="anatomyShellDescription"></p></div><div class="anatomy-copy anatomy-cover"><h3 data-smartball-content="anatomyCoverTitle">Outer Cover</h3><p data-smartball-content="anatomyCoverDescription">Dimples that minimize air resistance.\nMaintains a hole diameter of 42.67mm.</p></div></div></section>
     <section class="design-section composed-section spec-section" data-editable-section="spec-status">
