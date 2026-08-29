@@ -179,7 +179,7 @@
         .ginovo-common-cta::after { content: ""; position: absolute; inset: 0; z-index: 0; background: rgba(0,0,0,.18); }
         .ginovo-common-cta-content { width: min(calc(100% - 64px), 1200px); margin: 0 auto; text-align: center; position: relative; z-index: 1; }
         .ginovo-common-cta-content p { font-size: clamp(16px, 1.45vw, 21px); font-weight: 700; margin: 0 0 26px; color: #d6dbe3; letter-spacing: .01em; text-shadow: 0 2px 8px rgba(0,0,0,.95), 0 0 24px rgba(0,0,0,.85); }
-        .ginovo-common-cta-content h2 { font-size: clamp(30px, 4.2vw, 41px); font-weight: 700; margin: 0; line-height: 1.4; color: #FFFFFF; letter-spacing: normal; white-space: nowrap; text-shadow: 0 2px 18px rgba(0,0,0,.75); }
+        .ginovo-common-cta-content h2 { max-width: 1100px; font-size: clamp(30px, 4.2vw, 41px); font-weight: 700; margin: 0 auto; line-height: 1.4; color: #FFFFFF; letter-spacing: normal; white-space: normal; text-wrap: balance; text-shadow: 0 2px 18px rgba(0,0,0,.75); }
         .ginovo-footer { position: relative; z-index: 1; min-height: auto; background: #070C17; color: #FFFFFF; border-top: 1px solid rgba(255,255,255,0.1); padding: 64px 32px 44px; }
         .ginovo-footer-container { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, max-content); justify-content: space-between; gap: 40px; }
         .ginovo-footer-container > div { text-align: center; }
@@ -251,8 +251,8 @@
     <main style="width: 100%;">
 
         <section class="pm-hero" data-screen-label="히어로">
-            <video class="pm-hero-video" autoplay muted loop playsinline preload="auto" poster="./assets/videos/putting-mat-cover-poster.jpg" aria-label="Slope Putting Mat demonstration video">
-                <source src="./assets/videos/putting-mat-cover.mp4" type="video/mp4">
+            <video class="pm-hero-video" autoplay muted loop playsinline preload="auto" poster="./assets/videos/hero-video-poster.jpg" aria-label="GINOVO brand video">
+                <source src="./assets/videos/hero-video.mp4" type="video/mp4">
             </video>
             <div class="pm-hero-overlay" aria-hidden="true"></div>
         </section>
@@ -428,14 +428,6 @@
                         </div>
                     </div>
                     
-                </div>
-            </div>
-        </section>
-
-        <section class="pm-review-section" data-screen-label="리뷰 영상">
-            <div class="pm-review-inner" data-reveal="true">
-                <div class="pm-review-frame">
-                    <iframe src="https://www.youtube.com/embed/7yQ-nvXcnZc" title="Jong-Hoon Lee's video using the 90cm putting mat" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
