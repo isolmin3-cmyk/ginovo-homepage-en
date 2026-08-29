@@ -222,7 +222,7 @@
                         <div class="glass-panel glass-panel-hover rounded-xl overflow-hidden flex flex-col">
                             <div class="aspect-[3/4] overflow-hidden" style="background: {{ cert.bgStyle }}">
                                 <sc-if value="{{ cert.needsSlot }}" hint-placeholder-val="{{ false }}">
-                                    <image-slot id="{{ cert.slotId }}" shape="rect" placeholder="인증서 이미지" style="width:100%;height:100%"></image-slot>
+                                    <image-slot id="{{ cert.slotId }}" shape="rect" placeholder="Certificate image" style="width:100%;height:100%"></image-slot>
                                 </sc-if>
                             </div>
                             <div class="p-4">
@@ -333,21 +333,21 @@ class Component extends DCLogic {
   renderVals() {
     const openNav = this.state.openNav;
     const known = [
-      { title: '특허증', file: './assets/cert-018.jpg' },
-      { title: '특허증', file: './assets/cert-019.jpg' },
-      { title: '특허증', file: './assets/cert-020.jpg' },
-      { title: '특허증', file: './assets/cert-021.jpg' },
-      { title: '디자인등록증', file: './assets/cert-026.png' },
-      { title: '디자인등록증', file: './assets/cert-027.png' },
-      { title: '상표등록증', file: './assets/cert-028.png' },
-      { title: '디자인등록증', file: './assets/cert-029.png' },
-      { title: '특허증', file: './assets/cert-030.png' },
-      { title: '디자인등록증', file: './assets/cert-031.png' },
-      { title: '특허증', file: './assets/cert-032.png' },
-      { title: '상표등록증', file: './assets/cert-033.png' },
-      { title: '특허증', file: './assets/cert-034.png' },
-      { title: '특허증', file: './assets/cert-035.png' },
-      { title: '상표등록증', file: './assets/cert-036.png' }
+      { title: 'Patent Certificate', file: './assets/cert-018.jpg' },
+      { title: 'Patent Certificate', file: './assets/cert-019.jpg' },
+      { title: 'Patent Certificate', file: './assets/cert-020.jpg' },
+      { title: 'Patent Certificate', file: './assets/cert-021.jpg' },
+      { title: 'Design Registration Certificate', file: './assets/cert-026.png' },
+      { title: 'Design Registration Certificate', file: './assets/cert-027.png' },
+      { title: 'Trademark Registration Certificate', file: './assets/cert-028.png' },
+      { title: 'Design Registration Certificate', file: './assets/cert-029.png' },
+      { title: 'Patent Certificate', file: './assets/cert-030.png' },
+      { title: 'Design Registration Certificate', file: './assets/cert-031.png' },
+      { title: 'Patent Certificate', file: './assets/cert-032.png' },
+      { title: 'Trademark Registration Certificate', file: './assets/cert-033.png' },
+      { title: 'Patent Certificate', file: './assets/cert-034.png' },
+      { title: 'Patent Certificate', file: './assets/cert-035.png' },
+      { title: 'Trademark Registration Certificate', file: './assets/cert-036.png' }
     ];
     const extraTitles = [];
 

@@ -111,11 +111,11 @@
     const article = document.createElement('section');
     article.className = 'card';
     article.innerHTML = `
-      <img class="preview" src="${card.image}" alt="${card.title} 미리보기">
-      <label>사진 첨부</label><input type="file" accept="image/png,image/jpeg,image/webp" data-image="${index}">
+      <img class="preview" src="${card.image}" alt="${card.title} preview">
+      <label>Attach image</label><input type="file" accept="image/png,image/jpeg,image/webp" data-image="${index}">
       <label>title</label><input type="text" data-field="title" value="${card.title}">
-      <label>설명</label><input type="text" data-field="subtitle" value="${card.subtitle}">
-      ${card.items.map((item, itemIndex) => `<label>항목 ${itemIndex + 1}</label><input type="text" data-item="${itemIndex}" value="${item}">`).join('')}`;
+      <label>Description</label><input type="text" data-field="subtitle" value="${card.subtitle}">
+      ${card.items.map((item, itemIndex) => `<label>Item ${itemIndex + 1}</label><input type="text" data-item="${itemIndex}" value="${item}">`).join('')}`;
     article.querySelector('input[type="file"]').addEventListener('change', event => {
       const file = event.target.files[0];
       if (!file) return;
@@ -136,9 +136,9 @@
     }));
     try {
       localStorage.setItem(window.PUTTING_MAT_COMPARISON_STORAGE_KEY, JSON.stringify(result));
-      document.getElementById('status').textContent = '저장했습니다. Check page 버튼을 눌러 확인하세요.';
+      document.getElementById('status').textContent = 'Saved. Select Check Page to review your changes.';
     } catch (_) {
-      document.getElementById('status').textContent = '이미지 용량이 너무 큽니다. 더 작은 이미지로 다시 시도하세요.';
+      document.getElementById('status').textContent = 'The image is too large. Please try a smaller image.';
     }
   });
   document.getElementById('reset').addEventListener('click', () => {
@@ -180,9 +180,9 @@
     try {
       localStorage.setItem(window.SMARTBALL_CONTENT_STORAGE_KEY, JSON.stringify(nextContent));
       localStorage.setItem(window.SMARTBALL_MEDIA_STORAGE_KEY, JSON.stringify(nextMedia));
-      document.getElementById('smart-status').textContent = '저장했습니다. Check page 버튼을 눌러 확인하세요.';
+      document.getElementById('smart-status').textContent = 'Saved. Select Check Page to review your changes.';
     } catch (_) {
-      document.getElementById('smart-status').textContent = '이미지 용량이 너무 큽니다. 더 작은 이미지로 다시 시도하세요.';
+      document.getElementById('smart-status').textContent = 'The image is too large. Please try a smaller image.';
     }
   });
   document.getElementById('smart-reset').addEventListener('click', () => {
@@ -209,9 +209,9 @@
     try {
       localStorage.setItem(window.SMARTBALL_CONTENT_STORAGE_KEY, JSON.stringify(nextContent));
       localStorage.setItem(window.SMARTBALL_MEDIA_STORAGE_KEY, JSON.stringify(nextMedia));
-      document.getElementById('distance-status').textContent = '저장했습니다. Check page 버튼을 눌러 확인하세요.';
+      document.getElementById('distance-status').textContent = 'Saved. Select Check Page to review your changes.';
     } catch (_) {
-      document.getElementById('distance-status').textContent = '이미지 용량이 너무 큽니다. 더 작은 이미지로 다시 시도하세요.';
+      document.getElementById('distance-status').textContent = 'The image is too large. Please try a smaller image.';
     }
   });
   document.getElementById('distance-reset').addEventListener('click', () => {
