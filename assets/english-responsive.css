@@ -148,6 +148,49 @@ html[lang="en"] .field-badge { overflow-wrap:anywhere; }
   html[lang="en"] .practice-four-title { font-size:clamp(20px,5.6vw,23px); }
   html[lang="en"] .practice-point span { font-size:13px; line-height:1.3; }
 
+  /* Match the enlarged desktop metric cards while preserving the mobile two-column layout. */
+  html[lang="en"] .unity-stage>.unity-metric {
+    width:46%;
+    height:96px;
+    padding:6px 9px;
+    grid-template-columns:minmax(0,1fr) 48px;
+    column-gap:4px;
+  }
+  html[lang="en"] .unity-stage>.unity-metric:nth-of-type(n+4) {
+    grid-template-columns:48px minmax(0,1fr);
+  }
+  html[lang="en"] .unity-stage>.unity-metric:nth-of-type(-n+3) {
+    left:2%;
+  }
+  html[lang="en"] .unity-stage>.unity-metric:nth-of-type(n+4) {
+    right:2%;
+  }
+  html[lang="en"] .unity-stage>.unity-metric:nth-of-type(7) {
+    left:27%;
+    right:auto;
+  }
+  html[lang="en"] .unity-stage>.unity-metric .unity-metric-copy {
+    min-width:0;
+    overflow:visible;
+  }
+  html[lang="en"] .unity-stage>.unity-metric strong {
+    font-size:14.5px;
+    line-height:1.15;
+    letter-spacing:-.02em;
+    white-space:normal;
+  }
+  html[lang="en"] .unity-stage>.unity-metric small {
+    margin-top:4px;
+    font-size:11.5px;
+    line-height:1.15;
+    white-space:normal;
+  }
+  html[lang="en"] .unity-stage>.unity-metric .unity-metric-icon {
+    width:48px;
+    height:48px;
+    margin:0;
+  }
+
   html[lang="en"] .history-row,
   html[lang="en"] .history-row:nth-child(even),
   html[lang="en"] .history-row:nth-child(odd) { overflow-x:visible; }
