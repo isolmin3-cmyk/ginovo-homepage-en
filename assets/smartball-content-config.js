@@ -4,7 +4,7 @@
  */
 window.SMARTBALL_CONTENT_STORAGE_KEY = 'ginovo-smartball-content';
 window.SMARTBALL_CONTENT_SCHEMA_KEY = 'ginovo-smartball-content-schema';
-window.SMARTBALL_CONTENT_SCHEMA_VERSION = '20260910-en-v5';
+window.SMARTBALL_CONTENT_SCHEMA_VERSION = '20260910-en-v6';
 window.SMARTBALL_CONTENT_DEFAULTS = {
   anatomyTitle: 'A Simulator Built Inside\nA Smart Golf Ball',
   anatomySubtitle: 'A Smart Golf Ball Engineered to Feel and Perform Like a Standard Golf Ball',
@@ -22,7 +22,7 @@ window.SMARTBALL_CONTENT_DEFAULTS = {
   specRebound: 'Rebound: 72.1',
   specEccentricity: 'Eccentricity: 0.01mm',
   systemTitle: 'GINOVO Putting System',
-  systemSubtitle: 'A Complete Smart-Golf System Built for Focused Putting Practice',
+  systemSubtitle: 'A Complete Smart-Golf System\nBuilt for Focused Putting Practice',
   systemDescription: 'Includes a Smart Golf Ball, wireless charger, putting mat,\nreflector and mobile stand.',
   chargerTitle: 'Smart Wireless Charging System',
   chargerSubtitle: 'A portable wireless charger you can use anywhere',
