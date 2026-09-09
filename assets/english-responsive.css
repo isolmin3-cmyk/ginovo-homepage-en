@@ -96,20 +96,6 @@ html[lang="en"] #putting .title br { display:none; }
     left:52%;
     width:auto;
   }
-  html[lang="en"] .pc-media-copy.system-mat,
-  html[lang="en"] .pc-media-copy.system-stand {
-    display:flex;
-    width:auto;
-    height:auto;
-    padding:2px 5px;
-    justify-content:flex-start;
-    background:#070c17;
-    text-shadow:0 2px 10px rgba(0,0,0,.9);
-  }
-  html[lang="en"] .pc-media-copy.system-mat::after,
-  html[lang="en"] .pc-media-copy.system-stand::after {
-    content:none;
-  }
   html[lang="en"] .system-intro { top:31.5%; }
   html[lang="en"] .system-intro .system-subtitle {
     font-size:calc(clamp(18px,1.28vw,22px) + 7px);
