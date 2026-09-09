@@ -21,8 +21,8 @@ html[lang="en"] .home-section-one .home-body {
 }
 html[lang="en"] .unity-heading h2,
 html[lang="en"] .practice-four-heading h2 {
-  font-size:clamp(52px,7vw,100px)!important;
-  line-height:.98!important;
+  font-size:clamp(36px,3.05vw,50px)!important;
+  line-height:1.18!important;
   text-wrap:balance;
 }
 html[lang="en"] .practice-four-heading p { font-size:clamp(17px,1.3vw,25px); }
@@ -53,13 +53,13 @@ html[lang="en"] .section-heading,
 html[lang="en"] .system-intro .accent,
 html[lang="en"] .system-copy h3,
 html[lang="en"] .field-kicker {
-  font-size:clamp(52px,7vw,100px)!important;
-  line-height:.98!important;
+  font-size:clamp(36px,3.05vw,50px)!important;
+  line-height:1.18!important;
   text-wrap:balance;
 }
 html[lang="en"] .anatomy-title {
-  font-size:clamp(52px,7vw,100px)!important;
-  line-height:.98!important;
+  font-size:clamp(36px,3.05vw,50px)!important;
+  line-height:1.18!important;
   white-space:pre-line;
   text-wrap:initial;
 }
@@ -69,7 +69,10 @@ html[lang="en"] .system-copy>p,
 html[lang="en"] .system-notes { white-space:normal; overflow-wrap:anywhere; }
 html[lang="en"] .system-subtitle { font-size:clamp(18px,1.55vw,30px); }
 html[lang="en"] .system-description,
-html[lang="en"] .system-notes { font-size:clamp(14px,1.1vw,21px); }
+html[lang="en"] .system-notes,
+html[lang="en"] .section-lead,
+html[lang="en"] .section-points,
+html[lang="en"] .field-summary { font-size:clamp(18px,1.28vw,22px); line-height:1.55; }
 html[lang="en"] .field-feature strong,
 html[lang="en"] .field-feature span,
 html[lang="en"] .field-badge { overflow-wrap:anywhere; }
@@ -335,10 +338,10 @@ html[lang="en"] #putting .title br { display:none; }
   html[lang="en"] .section-heading,
   html[lang="en"] .system-intro .accent,
   html[lang="en"] .system-copy h3,
-  html[lang="en"] .field-kicker { font-size:48px!important; line-height:.98!important; }
+  html[lang="en"] .field-kicker { font-size:clamp(28px,7.7vw,32px)!important; line-height:1.2!important; }
   html[lang="en"] .anatomy-title {
-    font-size:48px!important;
-    line-height:.98!important;
+    font-size:clamp(28px,7.7vw,32px)!important;
+    line-height:1.2!important;
     white-space:pre-line;
   }
   html[lang="en"] .practice-four-heading p,
