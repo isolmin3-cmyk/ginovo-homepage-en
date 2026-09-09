@@ -1,6 +1,6 @@
 /*
- * Smart Golf Ball 페이지 문구 관리 지점입니다.
- * 추후 관리자 페이지에서 아래 값을 저장하도록 연결하면 이미지 수정 없이 반영됩니다.
+ * Smart Golf Ball page copy-management entry point.
+ * A future admin page can update these values without editing image assets.
  */
 window.SMARTBALL_CONTENT_STORAGE_KEY = 'ginovo-smartball-content';
 window.SMARTBALL_CONTENT_DEFAULTS = {
