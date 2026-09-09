@@ -86,12 +86,14 @@ html[lang="en"] #putting .title br { display:none; }
   html[lang="en"] .anatomy-visual { transform:translateY(2.2%); }
   html[lang="en"] .anatomy-copy p { white-space:pre-line; }
   html[lang="en"] .anatomy-layer {
-    left:18%;
-    width:24%;
+    left:33.7%;
+    width:34%;
+    transform:translateX(-50%);
+    text-align:center;
   }
   html[lang="en"] .anatomy-elastomer {
-    left:60%;
-    width:34%;
+    left:52%;
+    width:auto;
   }
   html[lang="en"] .pc-media-copy.system-mat,
   html[lang="en"] .pc-media-copy.system-stand { display:none; }
