@@ -5,7 +5,7 @@
  */
 window.SMARTBALL_MEDIA_STORAGE_KEY = 'ginovo-smartball-media';
 window.SMARTBALL_MEDIA_SCHEMA_KEY = 'ginovo-smartball-media-schema';
-window.SMARTBALL_MEDIA_SCHEMA_VERSION = '20260910-system-clean-v3';
+window.SMARTBALL_MEDIA_SCHEMA_VERSION = '20260910-system-clean-v4';
 window.SMARTBALL_DISTANCE_MEDIA_SCHEMA_KEY = 'ginovo-smartball-distance-media-schema';
 window.SMARTBALL_DISTANCE_MEDIA_SCHEMA_VERSION = '20260910-distance-en-v1';
 window.SMARTBALL_SLOPE_MEDIA_SCHEMA_KEY = 'ginovo-smartball-slope-media-schema';
@@ -39,6 +39,7 @@ try {
   var savedSmartballMedia = JSON.parse(localStorage.getItem(window.SMARTBALL_MEDIA_STORAGE_KEY) || '{}');
   if (localStorage.getItem(window.SMARTBALL_MEDIA_SCHEMA_KEY) !== window.SMARTBALL_MEDIA_SCHEMA_VERSION) {
     delete savedSmartballMedia['wireless-charger'];
+    delete savedSmartballMedia['putting-system-set'];
     localStorage.setItem(window.SMARTBALL_MEDIA_STORAGE_KEY, JSON.stringify(savedSmartballMedia));
     localStorage.setItem(window.SMARTBALL_MEDIA_SCHEMA_KEY, window.SMARTBALL_MEDIA_SCHEMA_VERSION);
   }
