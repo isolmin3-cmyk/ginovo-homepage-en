@@ -4,9 +4,9 @@
  */
 window.SMARTBALL_CONTENT_STORAGE_KEY = 'ginovo-smartball-content';
 window.SMARTBALL_CONTENT_SCHEMA_KEY = 'ginovo-smartball-content-schema';
-window.SMARTBALL_CONTENT_SCHEMA_VERSION = '20260910-en-v1';
+window.SMARTBALL_CONTENT_SCHEMA_VERSION = '20260910-en-v2';
 window.SMARTBALL_CONTENT_DEFAULTS = {
-  anatomyTitle: 'A Simulator Built Inside a Smart Golf Ball',
+  anatomyTitle: 'A Simulator Built Inside\nA Smart Golf Ball',
   anatomySubtitle: 'A Smart Golf Ball Engineered to Feel and Perform Like a Standard Golf Ball',
   anatomyLayerTitle: 'Layer',
   anatomyLayerDescription: 'Ionomer shock-absorbing structure for enhanced durability',

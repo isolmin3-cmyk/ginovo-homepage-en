@@ -48,7 +48,6 @@ html[lang="en"] .ginovo-common-cta-content h2 {
   font-size:clamp(25px,2.45vw,37px)!important;
 }
 
-html[lang="en"] .anatomy-title,
 html[lang="en"] .section-heading,
 html[lang="en"] .system-intro .accent,
 html[lang="en"] .system-copy h3,
@@ -56,6 +55,12 @@ html[lang="en"] .field-kicker {
   font-size:clamp(28px,2.35vw,45px)!important;
   line-height:1.22!important;
   text-wrap:balance;
+}
+html[lang="en"] .anatomy-title {
+  font-size:clamp(36px,5vw,72px)!important;
+  line-height:1.08!important;
+  white-space:pre-line;
+  text-wrap:initial;
 }
 html[lang="en"] .system-subtitle,
 html[lang="en"] .system-description,
@@ -326,11 +331,15 @@ html[lang="en"] #putting .title br { display:none; }
 
   html[lang="en"] .unity-heading h2,
   html[lang="en"] .practice-four-heading h2,
-  html[lang="en"] .anatomy-title,
   html[lang="en"] .section-heading,
   html[lang="en"] .system-intro .accent,
   html[lang="en"] .system-copy h3,
   html[lang="en"] .field-kicker { font-size:clamp(25px,7vw,29px)!important; }
+  html[lang="en"] .anatomy-title {
+    font-size:clamp(27px,7.7vw,31px)!important;
+    line-height:1.12!important;
+    white-space:pre-line;
+  }
   html[lang="en"] .practice-four-heading p,
   html[lang="en"] .section-lead,
   html[lang="en"] .section-points,
