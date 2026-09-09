@@ -1,7 +1,7 @@
 window.HOME_CONTENT = {
   section1Eyebrow: 'GINOVO Smart Golf Ball',
   section1Title: 'Beyond the Limits of Golf Balls,\nA New Standard in Golf Analysis.',
-  section1Body: 'Original. Advanced. Reliable. Impactful.\nA smart golf solution that sets a new standard for golf analysis.',
+  section1Body: 'Original. Advanced. Reliable. Impactful.\nA smart golf solution that sets a new standard\nfor golf analysis.',
   section2Title: 'Golf Innovation Powered by a Unity-Based Physics Engine',
   section2Body: 'Visualize Seven Essential Putting-Shot Metrics\nTransmit Shot Data in Real Time via Bluetooth',
   section3Title: 'Move Beyond Feel-Based Repetition to Systematic, Data-Driven Practice',
