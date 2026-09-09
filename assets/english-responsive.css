@@ -67,6 +67,7 @@ html[lang="en"] .system-notes { font-size:clamp(14px,1.1vw,21px); }
 html[lang="en"] .field-feature strong,
 html[lang="en"] .field-feature span,
 html[lang="en"] .field-badge { overflow-wrap:anywhere; }
+html[lang="en"] #putting .title br { display:none; }
 
 @media (min-width:1001px) {
   html[lang="en"] .unity-stage>.unity-metric {
@@ -302,10 +303,25 @@ html[lang="en"] .field-badge { overflow-wrap:anywhere; }
 @media (max-width:700px) {
   html[lang="en"] .hero h1 { font-size:clamp(36px,10.2vw,42px); line-height:1.12; }
   html[lang="en"] .hero-sub { font-size:18px; line-height:1.45; }
+  html[lang="en"] .hero-badge {
+    max-width:100%;
+    padding:8px 12px;
+    font-size:clamp(11.5px,3.4vw,13px);
+    line-height:1.2;
+    letter-spacing:.045em;
+    white-space:nowrap;
+  }
   html[lang="en"] .home-section-one .home-copy { width:76%; }
   html[lang="en"] .home-section-one h2 { font-size:clamp(28px,7.7vw,32px); line-height:1.2; }
   html[lang="en"] .home-section-one .home-eyebrow { margin-bottom:28px; font-size:18px; }
-  html[lang="en"] .home-section-one .home-body { margin-top:24px; font-size:16px; line-height:1.5; }
+  html[lang="en"] .home-section-one .home-body {
+    max-width:18.5ch;
+    margin-top:24px;
+    font-size:16px;
+    line-height:1.5;
+    white-space:normal;
+    text-shadow:0 1px 5px rgba(0,0,0,.42),0 0 12px rgba(0,0,0,.2);
+  }
   html[lang="en"] #about .esg-layout .desc br { display:none; }
 
   html[lang="en"] .unity-heading h2,
@@ -322,47 +338,104 @@ html[lang="en"] .field-badge { overflow-wrap:anywhere; }
   html[lang="en"] .practice-four-title { font-size:clamp(20px,5.6vw,23px); }
   html[lang="en"] .practice-point span { font-size:13px; line-height:1.3; }
 
-  /* Match the enlarged desktop metric cards while preserving the mobile two-column layout. */
+  /* Mobile Unity flow: heading, product visual, then one full-width metric per row. */
+  html[lang="en"] .unity-section,
+  html[lang="en"] .unity-stage {
+    height:auto;
+    min-height:0;
+  }
+  html[lang="en"] .unity-stage {
+    padding:490px 30px 42px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    overflow:hidden;
+  }
+  html[lang="en"] .unity-stage::before {
+    left:18px;
+    right:18px;
+    top:260px;
+    bottom:18px;
+  }
+  html[lang="en"] .unity-heading {
+    top:38px;
+    left:22px;
+    right:22px;
+  }
+  html[lang="en"] .unity-heading p {
+    max-width:34ch;
+    margin:12px auto 0;
+    font-size:14px;
+    line-height:1.42;
+  }
+  html[lang="en"] .unity-phone {
+    top:276px;
+    width:min(74%,285px);
+    height:195px;
+    object-fit:contain;
+  }
   html[lang="en"] .unity-stage>.unity-metric {
-    width:46%;
-    height:96px;
-    padding:6px 9px;
-    grid-template-columns:minmax(0,1fr) 48px;
-    column-gap:4px;
+    position:relative;
+    inset:auto;
+    flex:0 0 auto;
+    width:100%;
+    height:78px;
+    margin:0;
+    padding:5px 18px;
+    grid-template-columns:minmax(0,1fr) 66px;
+    column-gap:10px;
+    border-radius:18px;
   }
   html[lang="en"] .unity-stage>.unity-metric:nth-of-type(n+4) {
-    grid-template-columns:48px minmax(0,1fr);
-  }
-  html[lang="en"] .unity-stage>.unity-metric:nth-of-type(-n+3) {
-    left:2%;
-  }
-  html[lang="en"] .unity-stage>.unity-metric:nth-of-type(n+4) {
-    right:2%;
-  }
-  html[lang="en"] .unity-stage>.unity-metric:nth-of-type(7) {
-    left:27%;
-    right:auto;
+    grid-template-columns:minmax(0,1fr) 66px;
   }
   html[lang="en"] .unity-stage>.unity-metric .unity-metric-copy {
     min-width:0;
     overflow:visible;
+    text-align:center;
   }
   html[lang="en"] .unity-stage>.unity-metric strong {
-    font-size:14.5px;
-    line-height:1.15;
+    font-size:15.5px;
+    line-height:1.18;
     letter-spacing:-.02em;
     white-space:normal;
   }
   html[lang="en"] .unity-stage>.unity-metric small {
     margin-top:4px;
-    font-size:11.5px;
-    line-height:1.15;
+    font-size:12.5px;
+    line-height:1.18;
     white-space:normal;
   }
   html[lang="en"] .unity-stage>.unity-metric .unity-metric-icon {
-    width:48px;
-    height:48px;
+    order:initial;
+    width:66px;
+    height:62px;
     margin:0;
+    transform:none;
+  }
+
+  html[lang="en"] .practice-four-stage {
+    padding-top:335px;
+  }
+  html[lang="en"] .practice-four-heading {
+    top:38px;
+    left:22px;
+    right:22px;
+  }
+  html[lang="en"] .practice-four-heading p {
+    max-width:34ch;
+    margin:14px auto 0;
+    font-size:14px;
+    line-height:1.45;
+  }
+  html[lang="en"] .practice-four-panel {
+    top:300px;
+    height:calc(100% - 324px);
+  }
+
+  html[lang="en"] #putting .title br { display:block; }
+  html[lang="en"] #putting .title {
+    line-height:1.18;
   }
 
   html[lang="en"] .history-row,

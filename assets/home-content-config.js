@@ -6,7 +6,7 @@ window.HOME_CONTENT = {
   section2Body: 'Visualize Seven Essential Putting-Shot Metrics\nTransmit Shot Data in Real Time via Bluetooth',
   section3Title: 'Move Beyond Feel-Based Repetition to Systematic, Data-Driven Practice',
   section3Body: 'Set Target Distance – Analyze Statistics – Repeat Practice – Compete in Putting Matches',
-  section4Title: 'GINOVO Slope Putting Mat'
+  section4Title: 'GINOVO \nSlope Putting Mat'
 };
 
 window.HOME_MEDIA = {
