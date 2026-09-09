@@ -70,6 +70,8 @@ html[lang="en"] .field-badge { overflow-wrap:anywhere; }
 
 @media (min-width:1001px) {
   html[lang="en"] .unity-stage>.unity-metric {
+    width:17cqw;
+    height:6.4cqw;
     grid-template-columns:minmax(0,1fr) 5.2cqw;
     column-gap:.35cqw;
     padding-inline:.8cqw;
@@ -88,12 +90,12 @@ html[lang="en"] .field-badge { overflow-wrap:anywhere; }
     max-height:91px;
   }
   html[lang="en"] .unity-stage>.unity-metric strong {
-    font-size:min(.98cqw,19px);
+    font-size:min(1.08cqw,21px);
     font-weight:600;
     letter-spacing:-.025em;
   }
   html[lang="en"] .unity-stage>.unity-metric small {
-    font-size:min(.82cqw,16px);
+    font-size:min(.9cqw,17.5px);
     font-weight:400;
   }
   html[lang="en"] #about .esg-layout .desc {
