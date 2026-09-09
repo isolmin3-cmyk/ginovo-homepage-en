@@ -85,14 +85,26 @@ html[lang="en"] #putting .title br { display:none; }
   }
   html[lang="en"] .anatomy-visual { transform:translateY(2.2%); }
   html[lang="en"] .anatomy-copy p { white-space:pre-line; }
+  html[lang="en"] .anatomy-layer {
+    left:18%;
+    width:24%;
+  }
+  html[lang="en"] .anatomy-elastomer {
+    left:60%;
+    width:34%;
+  }
   html[lang="en"] .pc-media-copy.system-mat,
-  html[lang="en"] .pc-media-copy.system-stand { background:#070c17; }
+  html[lang="en"] .pc-media-copy.system-stand { display:none; }
   html[lang="en"] .system-intro { top:31.5%; }
   html[lang="en"] .system-intro .system-subtitle {
     font-size:clamp(18px,1.28vw,22px);
     line-height:1.55;
+    font-weight:400;
   }
   html[lang="en"] .system-intro .system-description {
+    font-size:clamp(18px,1.28vw,22px);
+    line-height:1.55;
+    font-weight:400;
     white-space:pre-line;
   }
   html[lang="en"] .system-copy>p {
