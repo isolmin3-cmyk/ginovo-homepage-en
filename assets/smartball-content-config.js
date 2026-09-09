@@ -3,6 +3,8 @@
  * A future admin page can update these values without editing image assets.
  */
 window.SMARTBALL_CONTENT_STORAGE_KEY = 'ginovo-smartball-content';
+window.SMARTBALL_CONTENT_SCHEMA_KEY = 'ginovo-smartball-content-schema';
+window.SMARTBALL_CONTENT_SCHEMA_VERSION = '20260910-en-v1';
 window.SMARTBALL_CONTENT_DEFAULTS = {
   anatomyTitle: 'A Simulator Built Inside a Smart Golf Ball',
   anatomySubtitle: 'A Smart Golf Ball Engineered to Feel and Perform Like a Standard Golf Ball',
@@ -53,6 +55,11 @@ window.SMARTBALL_CONTENT_DEFAULTS = {
 };
 try {
   var savedSmartballContent = JSON.parse(localStorage.getItem(window.SMARTBALL_CONTENT_STORAGE_KEY) || '{}');
+  if (localStorage.getItem(window.SMARTBALL_CONTENT_SCHEMA_KEY) !== window.SMARTBALL_CONTENT_SCHEMA_VERSION) {
+    savedSmartballContent = {};
+    localStorage.setItem(window.SMARTBALL_CONTENT_STORAGE_KEY, '{}');
+    localStorage.setItem(window.SMARTBALL_CONTENT_SCHEMA_KEY, window.SMARTBALL_CONTENT_SCHEMA_VERSION);
+  }
   var smartballContentMigrated = false;
   if (savedSmartballContent.anatomyTitle === 'A Smart Golf Ball Engineered to Feel and Perform Like a Standard Golf Ball') {
     savedSmartballContent.anatomyTitle = window.SMARTBALL_CONTENT_DEFAULTS.anatomyTitle;
