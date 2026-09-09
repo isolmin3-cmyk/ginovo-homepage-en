@@ -69,17 +69,36 @@ html[lang="en"] .field-feature span,
 html[lang="en"] .field-badge { overflow-wrap:anywhere; }
 
 @media (min-width:1001px) {
+  html[lang="en"] .unity-stage>.unity-metric {
+    grid-template-columns:minmax(0,1fr) 5.2cqw;
+    column-gap:.35cqw;
+    padding-inline:.8cqw;
+  }
+  html[lang="en"] .unity-stage>.unity-metric:nth-of-type(n+4) {
+    grid-template-columns:5.2cqw minmax(0,1fr);
+  }
+  html[lang="en"] .unity-stage>.unity-metric .unity-metric-copy {
+    min-width:0;
+    overflow:hidden;
+  }
+  html[lang="en"] .unity-stage>.unity-metric .unity-metric-icon {
+    width:5.2cqw;
+    height:4.75cqw;
+    max-width:100px;
+    max-height:91px;
+  }
   html[lang="en"] .unity-stage>.unity-metric strong {
-    font-size:min(1.12cqw,22px);
+    font-size:min(.98cqw,19px);
     font-weight:600;
+    letter-spacing:-.025em;
   }
   html[lang="en"] .unity-stage>.unity-metric small {
-    font-size:min(.94cqw,18px);
+    font-size:min(.82cqw,16px);
     font-weight:400;
   }
   html[lang="en"] #about .esg-layout .desc {
-    text-align:justify;
-    text-align-last:justify;
+    text-align:left;
+    text-align-last:auto;
   }
   html[lang="en"] #certificates .ip-item h3 {
     font-size:20px;
