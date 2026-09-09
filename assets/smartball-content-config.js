@@ -4,18 +4,18 @@
  */
 window.SMARTBALL_CONTENT_STORAGE_KEY = 'ginovo-smartball-content';
 window.SMARTBALL_CONTENT_SCHEMA_KEY = 'ginovo-smartball-content-schema';
-window.SMARTBALL_CONTENT_SCHEMA_VERSION = '20260910-en-v2';
+window.SMARTBALL_CONTENT_SCHEMA_VERSION = '20260910-en-v3';
 window.SMARTBALL_CONTENT_DEFAULTS = {
   anatomyTitle: 'A Simulator Built Inside\nA Smart Golf Ball',
   anatomySubtitle: 'A Smart Golf Ball Engineered to Feel and Perform Like a Standard Golf Ball',
   anatomyLayerTitle: 'Layer',
-  anatomyLayerDescription: 'Ionomer shock-absorbing structure for enhanced durability',
+  anatomyLayerDescription: 'Ionomer shock-absorbing structure\nfor enhanced durability',
   anatomyElastomerTitle: 'Elastomer',
-  anatomyElastomerDescription: 'Optimized rebound and precision control of core eccentricity.',
+  anatomyElastomerDescription: 'Optimized rebound and precision\ncontrol of core eccentricity.',
   anatomyShellTitle: 'Protective Shell',
   anatomyShellDescription: '',
   anatomyCoverTitle: 'Outer Cover',
-  anatomyCoverDescription: 'Dimples minimize drag while maintaining the official 42.67 mm ball diameter.',
+  anatomyCoverDescription: 'Dimples minimize drag while maintaining\nthe official 42.67 mm ball diameter.',
   specTitle: '100% Achievement of Physical Specification Targets',
   specWeight: 'Weight: 45.93g',
   specSize: 'Diameter: 42.67mm',
@@ -23,7 +23,7 @@ window.SMARTBALL_CONTENT_DEFAULTS = {
   specEccentricity: 'Eccentricity: 0.01mm',
   systemTitle: 'GINOVO Putting System',
   systemSubtitle: 'A Complete Smart-Golf System Built for Focused Putting Practice',
-  systemDescription: 'Includes a Smart Golf Ball, wireless charger, putting mat, reflector and mobile stand.',
+  systemDescription: 'Includes a Smart Golf Ball, wireless charger, putting mat,\nreflector and mobile stand.',
   chargerTitle: 'Smart Wireless Charging System',
   chargerSubtitle: 'A portable wireless charger you can use anywhere',
   chargerDeviceLabel: 'Wireless Charger',

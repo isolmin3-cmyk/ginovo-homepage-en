@@ -79,6 +79,29 @@ html[lang="en"] .field-badge { overflow-wrap:anywhere; }
 html[lang="en"] #putting .title br { display:none; }
 
 @media (min-width:1001px) {
+  html[lang="en"] .anatomy-subtitle {
+    font-size:clamp(18px,1.28vw,22px);
+    line-height:1.55;
+  }
+  html[lang="en"] .anatomy-visual { transform:translateY(2.2%); }
+  html[lang="en"] .anatomy-copy p { white-space:pre-line; }
+  html[lang="en"] .pc-media-copy.system-mat,
+  html[lang="en"] .pc-media-copy.system-stand { background:#070c17; }
+  html[lang="en"] .system-intro { top:31.5%; }
+  html[lang="en"] .system-intro .system-subtitle {
+    font-size:clamp(18px,1.28vw,22px);
+    line-height:1.55;
+  }
+  html[lang="en"] .system-intro .system-description {
+    white-space:pre-line;
+  }
+  html[lang="en"] .system-copy>p {
+    font-size:clamp(18px,1.28vw,22px);
+    line-height:1.55;
+    white-space:nowrap;
+  }
+  html[lang="en"] .field-panel { top:31%; }
+
   html[lang="en"] .unity-stage>.unity-metric {
     width:17cqw;
     height:6.4cqw;
