@@ -145,10 +145,6 @@ html[lang="en"] [data-screen-label="사이즈 비교"] li {
     margin-right:auto!important;
   }
 
-  html[lang="en"] [data-screen-label="사이즈 비교"] h2 br {
-    display:none;
-  }
-
   html[lang="en"] [data-screen-label="사이즈 비교"]>div>div:first-child h2 {
     max-width:20ch;
     margin-inline:auto!important;
