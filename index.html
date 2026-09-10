@@ -207,7 +207,7 @@
     @media(prefers-reduced-motion:reduce){.hero-badge,.hero h1,.hero-sub{animation:none}.cert,.certificate-card img,#putting .image-card,.history-row,.history-row li,.history::before,.reveal-card{transition:none!important}.reveal-card{opacity:1!important;transform:none!important;translate:none!important}#putting .image-card:hover{transform:none}}
   </style>
   <link rel="stylesheet" href="./assets/responsive-gutters.css?v=20260904-1">
-  <link rel="stylesheet" href="./assets/english-responsive.css?v=20260910-2">
+  <link rel="stylesheet" href="./assets/english-responsive.css?v=20260910-3">
 </head>
 <body>
   <header class="site-header">
@@ -332,6 +332,10 @@ for golf analysis.</p></div></div>
       var unityVisual=unitySection.querySelector('[data-unity-media="visual"]');
       if(unityVisual) unityVisual.src=unityContent.visual;
       unitySection.querySelectorAll('[data-unity-field]').forEach(function(node){node.textContent=unityContent[node.dataset.unityField]||'';});
+      var unityTitle=unitySection.querySelector('[data-unity-field="title"]');
+      if(unityTitle&&unityContent.title==='Golf Innovation Powered by a Unity-Based Physics Engine'){
+        unityTitle.innerHTML='<span class="unity-title-desktop">Golf Innovation Powered by a Unity-Based Physics Engine</span><span class="unity-title-mobile">Golf Innovation Powered by a<br>Unity-Based Physics Engine</span>';
+      }
       unitySection.querySelectorAll('[data-unity-metric]').forEach(function(card){
         var metric=unityContent.metrics[Number(card.dataset.unityMetric)]||{};
         card.querySelector('strong').textContent=metric.label||'';

@@ -1,6 +1,7 @@
 /* English-only type fitting; shared Korean geometry and media stay intact. */
 html[lang="en"] body { word-break: normal; overflow-wrap: break-word; }
 html[lang="en"] :where(h1,h2,h3,p,li,a,button,span) { word-break: normal; }
+html[lang="en"] .unity-title-mobile { display:none; }
 
 html[lang="en"] .hero h1 {
   font-size: clamp(40px,4.75vw,82px);
@@ -382,6 +383,12 @@ html[lang="en"] #putting .title br { display:none; }
   html[lang="en"] .system-intro .accent,
   html[lang="en"] .system-copy h3,
   html[lang="en"] .field-kicker { font-size:clamp(28px,7.7vw,32px)!important; line-height:1.2!important; }
+  html[lang="en"] .unity-heading h2 {
+    font-size:clamp(21px,6.15vw,24px)!important;
+    line-height:1.25!important;
+  }
+  html[lang="en"] .unity-title-desktop { display:none; }
+  html[lang="en"] .unity-title-mobile { display:block; white-space:nowrap; }
   html[lang="en"] .anatomy-title {
     font-size:clamp(28px,7.7vw,32px)!important;
     line-height:1.2!important;
@@ -401,7 +408,7 @@ html[lang="en"] #putting .title br { display:none; }
     min-height:0;
   }
   html[lang="en"] .unity-stage {
-    padding:490px 30px 42px;
+    padding:530px 30px 42px;
     display:flex;
     flex-direction:column;
     gap:12px;
@@ -410,7 +417,7 @@ html[lang="en"] #putting .title br { display:none; }
   html[lang="en"] .unity-stage::before {
     left:18px;
     right:18px;
-    top:260px;
+    top:300px;
     bottom:18px;
   }
   html[lang="en"] .unity-heading {
@@ -420,12 +427,12 @@ html[lang="en"] #putting .title br { display:none; }
   }
   html[lang="en"] .unity-heading p {
     max-width:34ch;
-    margin:12px auto 0;
+    margin:18px auto 0;
     font-size:14px;
     line-height:1.42;
   }
   html[lang="en"] .unity-phone {
-    top:276px;
+    top:316px;
     width:min(74%,285px);
     height:195px;
     object-fit:contain;
