@@ -119,18 +119,49 @@ html[lang="en"] [data-screen-label="사이즈 비교"] li {
     text-wrap:balance;
   }
 
+  html[lang="en"] main>section[data-screen-label]:not([data-screen-label="히어로"]) h2 {
+    max-inline-size:20ch;
+  }
+
+  html[lang="en"] main>section[data-screen-label]:not([data-screen-label="히어로"]) h3 {
+    max-inline-size:24ch;
+  }
+
+  html[lang="en"] main>section[data-screen-label]:not([data-screen-label="히어로"]) p {
+    max-inline-size:34ch;
+  }
+
+  html[lang="en"] main>section[data-screen-label]:not([data-screen-label="히어로"]) li {
+    max-inline-size:36ch;
+  }
+
+  html[lang="en"] main>section[data-screen-label]:not([data-screen-label="히어로"]) [style*="text-align: center"] :where(h2,h3,p),
+  html[lang="en"] .ginovo-common-cta-content :where(h2,p) {
+    margin-inline:auto!important;
+  }
+
+  html[lang="en"] .feature90-column :where(h2,h3,p),
+  html[lang="en"] .feature70-column :where(h2,h3,p) {
+    margin-right:auto!important;
+  }
+
   html[lang="en"] [data-screen-label="사이즈 비교"] h2 br {
     display:none;
   }
 
-  html[lang="en"] [data-screen-label="사이즈 비교"]>div>div:first-child :where(h2,p) {
-    max-width:34ch;
+  html[lang="en"] [data-screen-label="사이즈 비교"]>div>div:first-child h2 {
+    max-width:20ch;
+    margin-inline:auto!important;
+  }
+
+  html[lang="en"] [data-screen-label="사이즈 비교"]>div>div:first-child p {
+    max-width:32ch;
     margin-inline:auto!important;
   }
 
   html[lang="en"] .feature90-description,
   html[lang="en"] .feature70-description {
-    max-width:42ch;
+    max-width:34ch;
   }
 
   html[lang="en"] [data-comparison-card] [data-card-title],
