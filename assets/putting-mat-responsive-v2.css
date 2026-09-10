@@ -113,6 +113,22 @@ html[lang="en"] [data-screen-label="사이즈 비교"] li {
 
 /* Mobile spacing and type are proportional to the approved PC page. */
 @media (max-width:700px) {
+  html[lang="en"] .ginovo-header-right {
+    display:flex!important;
+    margin-left:auto;
+    gap:6px;
+  }
+
+  html[lang="en"] .ginovo-login {
+    display:none!important;
+  }
+
+  html[lang="en"] .ginovo-lang>a,
+  html[lang="en"] .ginovo-menu-toggle {
+    min-width:44px;
+    min-height:44px;
+  }
+
   html[lang="en"] main>section[data-screen-label]:not([data-screen-label="히어로"]):not(.ginovo-common-cta) h2:not([style*="border-radius"]) {
     font-size:clamp(28px,7.7vw,32px)!important;
     line-height:1.2!important;
