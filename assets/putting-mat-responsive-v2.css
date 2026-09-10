@@ -30,6 +30,13 @@ html[lang="en"] [data-screen-label="사이즈 비교"]>div>div:first-child>p {
   text-align-last:auto;
 }
 
+html[lang="en"] [data-screen-label="사이즈 비교"]>div>div:first-child>p {
+  width:100%;
+  margin-inline:auto!important;
+  text-align:center!important;
+  text-align-last:center!important;
+}
+
 html[lang="en"] [data-screen-label="대표 모델 90cm"] ul li>div>span:first-child,
 html[lang="en"] [data-screen-label="Sloping Mat"] [style*="font-size: 14px"][style*="font-weight: 500"],
 html[lang="en"] [data-screen-label="사이즈 비교"] h3+p {
